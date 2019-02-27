@@ -11,7 +11,7 @@ app.use(express.static(path.join(path.dirname(__dirname), 'client')));
 const server = http.createServer(app);
 let players = [];
 let gameRounds;
-const port = 8090;
+const port = process.env.PORT || 8090;
 server.listen(port, () => console.log(`Server is listening on port ${port}...`));
 let socket = sio(server);
 function sendLeftPoints(num) {
