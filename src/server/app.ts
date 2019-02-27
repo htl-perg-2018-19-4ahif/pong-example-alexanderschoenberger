@@ -18,7 +18,7 @@ let players: IPlayer[] = [];
 
 let gameRounds: number;
 
-const port = 8090;
+const port = process.env.PORT || 8090;
 server.listen(port, () => console.log(`Server is listening on port ${port}...`));
 let socket = sio(server);
 

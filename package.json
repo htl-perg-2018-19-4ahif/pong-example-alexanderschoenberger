@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp",
-    "start": "nodemon -w ./dist --exec node ./dist/server/app.js"
+    "start": "node ./dist/server/app.js"
   },
   "repository": {
     "type": "git",
